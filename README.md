@@ -1,5 +1,13 @@
 # STRUCTURAL-PATTERNS
 
+# Адаптер
+
+![](https://github.com/obscene3190/STRUCTURAL-PATTERNS/blob/master/sourses/adapter.png)
+
+# Мост
+
+![](https://github.com/obscene3190/STRUCTURAL-PATTERNS/blob/master/sourses/Bridge.png)
+
 # TODO
 ## Структурные 
 Адаптер
@@ -23,7 +31,7 @@
 - [ ] защита
 
 Фасад
-- [x] теория
+- [ ] теория
 - [ ] пример
 - [ ] защита
 
@@ -33,6 +41,6 @@
 - [ ] защита
 
 Заместитель
-- [x] теория
+- [ ] теория
 - [ ] пример
 - [ ] защита
