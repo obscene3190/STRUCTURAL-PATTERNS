@@ -63,4 +63,12 @@ int main() {
     Folder2.addUnit(&Folder1);
     Folder2.addUnit(&File1);
     Folder2.info();
+  /*
+  Text File 
+  Image 
+
+  Text File 
+  Image 
+  Text File 
+  */
 }
