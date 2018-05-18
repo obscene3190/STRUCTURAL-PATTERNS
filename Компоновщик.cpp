@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <assert.h>
+#include <cassert>
 using namespace std; 
 
 // Общий интерфейс компонентов
@@ -67,6 +67,9 @@ int main() {
     cout<<endl;
     Folder2.addUnit(&Folder1);
     Folder2.addUnit(&File1);
+    Folder2.info();
+    Image1.addUnit(&File1);
+    cout<<endl;
     Folder2.info();
   /*
   Text File 
