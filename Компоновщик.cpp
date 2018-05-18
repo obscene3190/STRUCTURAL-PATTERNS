@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <assert.h>
 using namespace std; 
 
 // Общий интерфейс компонентов
@@ -8,21 +9,25 @@ class element
   public:
     virtual void info() {}
     virtual ~element() {}
+    virtual void addUnit(element* p) {
+        assert( false);
+    }
 };
  
 // Простой компонент
 class tfile: public element
 {
   public:
-    virtual void info() {
+    void info() override {
       cout<<"Text File "<<endl;
     }
+    
 };
  
 class image: public element
 {
   public:
-    virtual void info() {
+    void info() override {
       cout<<"Image "<<endl;
     }
 };
@@ -38,11 +43,11 @@ class folder: public element
    std::vector<element*> c;
    
   public:
-    void info() {
+    void info() override {
       for(unsigned int i=0; i<c.size(); ++i)
         c[i]->info();
     }
-    void addUnit(element* p) { 
+    void addUnit(element* p) override { 
         c.push_back(p);
     }
     ~folder() {
@@ -72,3 +77,4 @@ int main() {
   Text File 
   */
 }
+
